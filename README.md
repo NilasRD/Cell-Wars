@@ -9,7 +9,7 @@ Cell Wars is a turn based strategy game based on Conways Game of Life.
 - When you have placed to cells you want, press SPACEBAR to start the simulation. (Your turn is the over)
 - A player has lost when they have no cells in their heart area.
 
-### [PLAY THE GAME](https://github.com/NilasRD/Cell-Wars/Game%20of%20Life%20Wars/index.html)
+### [PLAY THE GAME](https://nilasrd.github.io/Cell-Wars/Game%20of%20Life%20Wars/index.html)
 
 (The game was made using the Phaser CE game engine)
 
