@@ -1,3 +1,5 @@
+### [PLAY THE GAME](https://nilasrd.github.io/Cell-Wars/Game%20of%20Life%20Wars/index.html)
+
 ## How to play
 Cell Wars is a turn based strategy game based on Conways Game of Life. 
 - You add cells by pressing the left mouse button and remove cells by pressing the right. 
