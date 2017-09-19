@@ -158,7 +158,7 @@ var playState = {
         game.add.tween(this.UI).from({x: -500},1100).easing(Phaser.Easing.Elastic.Out).start();
         
         this.UIPlayerState = game.add.text(10,30,'PLAYER 1',this.textStyle);
-        this.UIPlayer1Bricks = game.add.text(10,30,'\n BRICKS LEFT: '+this.player1Bricks,this.textStyle);
+        this.UIPlayer1Bricks = game.add.text(10,30,'\n CELLS LEFT: '+this.player1Bricks,this.textStyle);
         
         this.UIPlayer1Bricks.setTextBounds(0,0,this.boardPosX-10,100); 
         this.UIPlayer1Bricks.y = this.UIy+this.gridHeight*this.gridy/4
@@ -597,7 +597,7 @@ var playState = {
             if (this.currentPlayer === 1){
                 this.currentPlayer = 2;
                 this.player2Bricks = this.roundBricks;
-                this.UIPlayer1Bricks.text = "\n BRICKS LEFT: "+this.player2Bricks;
+                this.UIPlayer1Bricks.text = "\n CELLS LEFT: "+this.player2Bricks;
                  this.UIPlayerState.text = "PLAYER 2"
                 this.UIy = this.gridHeight*this.gridy/2;
                 
@@ -627,7 +627,7 @@ var playState = {
             } else if (this.currentPlayer === 2){
                 this.currentPlayer = 1
                 this.player1Bricks = this.roundBricks;
-                this.UIPlayer1Bricks.text = "\n BRICKS LEFT: "+this.player1Bricks;
+                this.UIPlayer1Bricks.text = "\n CELLS LEFT: "+this.player1Bricks;
                 this.UIPlayerState.text = "PLAYER 1"
                  this.UIy = 0;
                 
@@ -708,7 +708,7 @@ var playState = {
     if (this.stageNow[this.gridCellX][this.gridCellY] === 0){
         if (this.stageAdd[this.gridCellX][this.gridCellY] === 0){
     this.player1Bricks -=1;
-    this.UIPlayer1Bricks.text = "\n BRICKS LEFT: "+this.player1Bricks;
+    this.UIPlayer1Bricks.text = "\n CELLS LEFT: "+this.player1Bricks;
     this.stageAdd[this.gridCellX][this.gridCellY] = 1;
             this.pointerReact.thick = 2;
             game.add.tween(this.pointerReact).from({thick: 5},100).easing(Phaser.Easing.Sinusoidal.InOut).start()
@@ -723,7 +723,7 @@ var playState = {
     if (this.stageNow[this.gridCellX][this.gridCellY] === 0){
         if (this.stageAdd[this.gridCellX][this.gridCellY] === 0){
     this.player2Bricks -=1;
-    this.UIPlayer1Bricks.text = "\n BRICKS LEFT: "+this.player2Bricks;
+    this.UIPlayer1Bricks.text = "\n CELLS LEFT: "+this.player2Bricks;
     this.stageAdd[this.gridCellX][this.gridCellY] = 1;
             this.pointerReact.thick = 2;
             game.add.tween(this.pointerReact).from({thick: 5},100).easing(Phaser.Easing.Sinusoidal.InOut).start()
@@ -737,7 +737,7 @@ var playState = {
     if (this.currentPlayer === 1){
         if (this.stageAdd[this.gridCellX][this.gridCellY] === 1){
             this.player1Bricks +=1;
-            this.UIPlayer1Bricks.text = "\n BRICKS LEFT: "+this.player1Bricks;
+            this.UIPlayer1Bricks.text = "\n CELLS LEFT: "+this.player1Bricks;
             this.stageAdd[this.gridCellX][this.gridCellY] = 0;
             this.pointerReact.thick = 2;
             game.add.tween(this.pointerReact).from({thick: 0},100).easing(Phaser.Easing.Sinusoidal.InOut).start()
@@ -748,7 +748,7 @@ var playState = {
     if (this.currentPlayer === 2){
         if (this.stageAdd[this.gridCellX][this.gridCellY] === 1){
             this.player2Bricks +=1;
-            this.UIPlayer1Bricks.text = "\n BRICKS LEFT: "+this.player2Bricks;
+            this.UIPlayer1Bricks.text = "\n CELLS LEFT: "+this.player2Bricks;
             this.stageAdd[this.gridCellX][this.gridCellY] = 0;
             this.pointerReact.thick = 2;
             game.add.tween(this.pointerReact).from({thick: 0},100).easing(Phaser.Easing.Sinusoidal.InOut).start()
