@@ -11,4 +11,6 @@ Cell Wars is a turn based strategy game based on Conways Game of Life.
 
 ### [PLAY THE GAME](https://github.com/NilasRD/Cell-Wars/blob/master/Game%20of%20Life%20Wars/index.html)
 
+(The game was made using the Phaser CE game engine)
+
 
